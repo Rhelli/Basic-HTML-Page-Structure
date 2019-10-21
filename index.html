@@ -14,19 +14,26 @@
         <script src="https://kit.fontawesome.com/ededf92f28.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav id="navBar">
-            <!-- items on nav bar -->
-            <ul id="itemsNavBar" role="navigation">
-                <li id="guide"><button><i class="fas fa-bars"></i></button></li>
-                <li id="Home"><button class="youtube-button"><img  class="youtube-icon" src="./Icons/youtube-logo.png" alt="Youtube"></button></li>
-                <input type="search" placeholder="Search"><button><i class="fas fa-search"></i></button>
-                <li id="video-create"><button></button></li>
-                <li id="youtube-apps"><button></button></li>
-                <li id="settings"><button></button></li>
-                <li id="signin"><button>Sign In</button></li>
-            </ul>
+        <nav class="navbar">
+            <a href="#Guide"><button><i class="fas fa-bars"></i></button></a>
+            <a href="#Home"><button class="youtube-button"><img class="youtube-icon" src="./Icons/youtube-logo.png" alt="Youtube"></button></a>
+            <div class="search-container">
+                <form class="search-form">
+                    <div class="search-field-div">
+                        <input class="search-field" type="search" placeholder="Search">
+                    </div>
+                    <div>
+                        <button class="search-button"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+            <a href="#Video-create"><button></button></a>
+            <a href="#Youtube-apps"><button></button></a>
+            <a href="#Settings"><button></button></a>
+            <a href="#Signin"><button>Sign In</button></a>
         </nav>
         
         <script src="" async defer></script>
     </body>
 </html>
+
