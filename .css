@@ -20,19 +20,22 @@ html {
 .title-container {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
     border-bottom: 1px solid darkgray;
 }
     .iframe-title {
         display: inline-block;
+        text-align: left;
     }
     .iframe-likeDislikeButton {
+        height: 20px;
         display: inline-flex;
+        justify-content: flex-end;
     }
 
 /* Video Description Container */
 .description-container {
     display: flex;
-    flex-flow:
 }
     .iframe-description {
 
