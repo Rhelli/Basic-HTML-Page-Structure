@@ -1,12 +1,29 @@
+/* Navbar */
 #navBar {
     list-style-type: none;
     text-align: center; 
 
     background-color: rgba(255, 179, 187, 1);
-}
-  
+} 
 #navBar li {
     display: inline-block;
     font-size: 17px;
     padding: 17px;
 }
+.youtube-button {
+    display: inline-block;
+    height: 12vh;
+    width: auto;
+    background: transparent;
+}
+.youtube-icon {
+    display: block;
+    height: 10vh;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+
+}
+
+
