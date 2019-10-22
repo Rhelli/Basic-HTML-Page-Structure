@@ -22,6 +22,10 @@ h4, p {
     margin-inline-end: .5px;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -340,7 +344,7 @@ h4, p {
                 
                 }
                 .uc-commentAge {
-                    
+                    padding-left: 15px;
                 }
                 .uc-comment {
 
@@ -352,14 +356,14 @@ h4, p {
             }
             
             .uc-likes-section > i {
-                padding: 0px 10px;
+                padding-left: 15px;
+                
             }
 
             .uc-viewReply {
 
             }
 
-    
     
     /* Video Playlist Column (RIGHT) */
     .thumbnail-column {
@@ -381,7 +385,7 @@ h4, p {
             margin: 5px;
         }
         .tn-image {
-            padding: 0px 10px;
+            padding: 0px 15px;
         }
         .tn-info{
             width: 400px;
