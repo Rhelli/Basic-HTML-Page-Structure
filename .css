@@ -164,5 +164,110 @@ body {
     padding-right: 4px;
 }
 
+/* Main Body Container */
+.page-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+    height: auto;
+
+}
+    /* Main Video iFrame Container (LEFT) */
+    .video-content {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 70vw;
+        height: auto;
+    }
+        /* Video iFrame with Title and Buttons */
+        .video-column {
+            display: flex;
+            flex-flow: column nowrap;
+            width: 100%;
+            height: auto;
+        }
+            .video-player {
+
+            }
+            .video-title {
+
+            }
+            .video-info-main {
+
+            }
+                .view-counter {
+
+                }
+                .video-info-right {
+
+                }
+                /* Main Video Buttons */
+                .likes-section {
+
+                }
+                    .fa-thumbs-up {
+
+                    }
+                    .likes-counter {
+
+                    }
+                    .fa-thumbs-down {
+
+                    }
+                    .dislikes-counter {
+
+                    }
+                    .fa-share {
+
+                    }
+                    .share-section {
+
+                    }
+                    .fa-plus {
+
+                    }
+                    .fa-ellipsis-h {
+
+                    }
+        
+        /* Video Description */
+        .description-box {
+
+        }
+            .profile-pic {
+
+            }
+            .description-div {
+
+            }
+
+    
+    
+    /* Video Playlist Column (RIGHT) */
+    .thumbnail-column {
+
+    }
+        .thumbnail-box {
+
+        }
+        .thumbnail-container {
+
+        }
+            .pl-thumbnail {
+
+            }
+            .thumb-info {
+
+            }
+                .pl-title {
+
+                }
+                .pl-channel {
+
+                }
+                .pl-views {
+
+                }
+
 
 
