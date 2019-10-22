@@ -67,13 +67,13 @@ body {
         display: flex;
         justify-content: center;
         width: 45vw;
-        height: 3.5vh;
+        height: 30px;
         margin: 0 25px;
     }
         .search-form {
             display: flex;
             width: 45vw;
-            height: 3.5vh;
+            height: 30px;
         }
             .search-field-div {
                 display: inline-block;
@@ -93,12 +93,12 @@ body {
                 }
                 .search-button-div {
                     display: inline-block;
-                    height: 3.5vh;
+                    height: 30px;
                     width: 5vw
                 }
             .search-button {
                 display: inline-block;
-                height: 3.5vh;
+                height: 30px;
                 width: 5vw;
                 border-radius: 2px;
             }
@@ -154,7 +154,7 @@ body {
     .signin-button {
         display: inline-block;
         height: 35px;
-        width: 80px;
+        width: 90px;
         border: 1px solid #0A5FD4;
         border-radius: 2px;
         font-size: 0.8em;
@@ -166,6 +166,8 @@ body {
         .fa-user-circle {
             color: #0A5FD4;
             padding-right: 3px;
+            line-height: 0;
+            margin: 0 !important;
         }
 
 
@@ -381,6 +383,48 @@ body {
                     font-weight: 500;
                     cursor: pointer;
                 }
+
+    /* User Comment Container */
+    .userComment-column {
+        display: flex;
+
+    }
+    /* User Comment Box */
+    .uc-box {
+        display: flex;
+    }
+        .fa-user-circle {
+            padding: right;
+            margin: 20px;
+        }
+        .uc-info {
+
+        }
+            .uc-section {
+                display: flex;
+            }
+                .uc-name {
+                
+                }
+                .uc-commentAge {
+                    
+                }
+                .uc-comment {
+
+                }
+            .uc-likes-section {
+                display: flex;
+                justify-content: space-evenly;
+                width: 20vw;
+            }
+            
+            .uc-likes-section > i {
+                padding: 0px 10px;
+            }
+
+            .uc-viewReply {
+
+            }
 
     
     
