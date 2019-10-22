@@ -13,6 +13,15 @@ body {
     background: lightgray;
 }
 
+h4, p {
+    padding: 0;
+    margin: 0;
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+    margin-inline-start: .5px;
+    margin-inline-end: .5px;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -362,28 +371,30 @@ body {
         align-items: flex-start;
         padding-right: 25%;
         border-bottom: 1px solid #eee;
+
+        /* background-color: burlywood; */
     }
-        .thumbnail-box {
+        .tn-box {
             display: flex;
             flex-direction: row;
             height: 100px;
-            margin-bottom: 16px;
+            margin: 5px;
         }
-        .thumbnail-container {
-
+        .tn-image {
+            padding: 0px 10px;
         }
-            .pl-thumbnail {
+        .tn-info{
+            width: 400px;
+            margin: 0px;
+            margin-block-start: 0px;
+        }
+            .tn-title {
 
             }
-            .thumb-info {
+
+            .tn-channel {
 
             }
-                .pl-title {
+            .tn-views {
 
-                }
-                .pl-channel {
-
-                }
-                .pl-views {
-
-                }
+            }
