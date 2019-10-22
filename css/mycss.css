@@ -308,6 +308,48 @@ body {
                     display: inline-block;
                 }
 
+    /* User Comment Container */
+    .userComment-column {
+        display: flex;
+
+    }
+    /* User Comment Box */
+    .uc-box {
+        display: flex;
+    }
+        .fa-user-circle {
+            padding: right;
+            margin: 20px;
+        }
+        .uc-info {
+
+        }
+            .uc-section {
+                display: flex;
+            }
+                .uc-name {
+                
+                }
+                .uc-commentAge {
+                    
+                }
+                .uc-comment {
+
+                }
+            .uc-likes-section {
+                display: flex;
+                justify-content: space-evenly;
+                width: 20vw;
+            }
+            
+            .uc-likes-section > i {
+                padding: 0px 10px;
+            }
+
+            .uc-viewReply {
+
+            }
+
     
     
     /* Video Playlist Column (RIGHT) */
