@@ -184,26 +184,23 @@ ul {
         }
 
 
-.videoAndThumbnail-container {
-    display: flex;
-}
 
 /* Main Body Container */
 .page-container {
     display: flex;
     flex-flow: row wrap;
-    width: 70vw;
+    max-width: 70vw;
     height: auto;
     padding-top: 50px;
 }
     /* Main Video iFrame Container (LEFT) */
     .video-content {
-        display: flex;
+        display: inline-flex;
         width: 70vw;
         height: auto;
         flex-flow: column nowrap;
         background-color: white;
-        padding: 3vh 3vw;
+        padding: 3vh 24px 3vh 3vw;
     }
         /* Video iFrame with Title and Buttons */
         .video-column {
@@ -401,6 +398,43 @@ ul {
                     cursor: pointer;
                 }
 
+    /* Video Playlist Column (RIGHT) */
+    .thumbnail-column {
+        display: inline-flex;
+        width: 10vw;
+        height: auto;
+        flex-direction: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-bottom: 1px solid #eee;
+
+        background-color: burlywood;
+    }
+        .tn-box {
+            display: flex;
+            flex-direction: row;
+            height: 100px;
+            margin: 5px;
+        }
+        .tn-image {
+            padding: 0px 15px;
+        }
+        .tn-info{
+            width: 20vw;
+            margin: 0px;
+            margin-block-start: 0px;
+        }
+            .tn-title {
+
+            }
+
+            .tn-channel {
+
+            }
+            .tn-views {
+
+            }
+
     /* User Comment Container */
     .userComment-column {
         display: flex;
@@ -441,44 +475,5 @@ ul {
             }
 
             .uc-viewReply {
-
-            }
-
-    
-    /* Video Playlist Column (RIGHT) */
-    .thumbnail-column {
-        display: inline-flex;
-        width: 30vw;
-        height: auto;
-        flex-direction: row nowrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding-right: 25%;
-        border-bottom: 1px solid #eee;
-
-        /* background-color: burlywood; */
-    }
-        .tn-box {
-            display: flex;
-            flex-direction: row;
-            height: 100px;
-            margin: 5px;
-        }
-        .tn-image {
-            padding: 0px 15px;
-        }
-        .tn-info{
-            width: 400px;
-            margin: 0px;
-            margin-block-start: 0px;
-        }
-            .tn-title {
-
-            }
-
-            .tn-channel {
-
-            }
-            .tn-views {
 
             }
