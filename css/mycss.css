@@ -184,11 +184,15 @@ ul {
         }
 
 
+.videoAndThumbnail-container {
+    display: flex;
+}
+
 /* Main Body Container */
 .page-container {
     display: flex;
     flex-flow: row wrap;
-    width: 100vw;
+    width: 70vw;
     height: auto;
     padding-top: 50px;
 }
@@ -443,7 +447,7 @@ ul {
     
     /* Video Playlist Column (RIGHT) */
     .thumbnail-column {
-        display: flex;
+        display: inline-flex;
         width: 30vw;
         height: auto;
         flex-direction: row nowrap;
