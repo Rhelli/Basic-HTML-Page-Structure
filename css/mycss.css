@@ -192,6 +192,9 @@ ul {
     height: auto;
     flex-wrap: wrap;
     align-items: flex-start;
+    column-count: 2;
+    column-gap: 1em;
+    
 }
 
 
@@ -489,12 +492,16 @@ ul {
     /* User Comment Container */
     .userComment-column {
         display: flex;
+        width: 65vw;
+        height: auto;
         order: 3;
+        background: green;
 
     }
     /* User Comment Box */
     .uc-box {
         display: flex;
+        width: 65vw;
     }
         .fa-user-circle {
             padding: right;
