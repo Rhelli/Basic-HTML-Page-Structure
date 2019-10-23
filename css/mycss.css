@@ -448,12 +448,12 @@ ul {
                     display: inline-block;
                     width: 168px;
                     height: 94px;
-                    padding: 0px 15px;
+                    padding: 0;
                 }
         .tn-info{
             display: flex;
             flex-flow: column;
-            width: 30%;
+            max-width: 30vw;
             font-family: inherit;
             margin: 0px;
             margin-block-start: 0px;
