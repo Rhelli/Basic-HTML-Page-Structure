@@ -11,6 +11,7 @@ body {
     padding: 0;
     margin: 0;
     background: lightgray;
+    max-width: 100vw;
 }
 
 h4, p {
@@ -24,6 +25,8 @@ h4, p {
 
 ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* Navbar */
@@ -182,37 +185,39 @@ ul {
             line-height: 0;
             margin: 0 !important;
         }
-
-
-
-/* Main Body Container */
-.page-container {
+/* MAIN PAGE CONTAINER */
+.main-container {
     display: flex;
-    flex-flow: row wrap;
-    max-width: 70vw;
+    max-width: 100vw;
     height: auto;
-    padding-top: 50px;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
+
+
     /* Main Video iFrame Container (LEFT) */
     .video-content {
         display: inline-flex;
-        width: 70vw;
+        max-width: 65vw;
+        order: 1;
+        flex: 3 2 65vw;
         height: auto;
         flex-flow: column nowrap;
         background-color: white;
         padding: 3vh 24px 3vh 3vw;
+        margin-top: 70px;
     }
         /* Video iFrame with Title and Buttons */
         .video-column {
             display: flex;
             flex-flow: column nowrap;
-            width: 70vw;
+            width: 100%;
             height: auto;
 
         }
             .video-player {
                 position: relative;
-                padding-top: 56.25%;
+                padding-top: 66.66%;
                 width: 100%;
             }
             .video-player > iframe {
@@ -401,43 +406,90 @@ ul {
     /* Video Playlist Column (RIGHT) */
     .thumbnail-column {
         display: inline-flex;
-        width: 10vw;
+        max-width: 28vw;
+        flex: 1 1 28vw;
+        order: 2;
         height: auto;
-        flex-direction: row nowrap;
+        flex-direction: row wrap;
         justify-content: flex-start;
         align-items: flex-start;
         border-bottom: 1px solid #eee;
-
         background-color: burlywood;
+        margin-top: 60px;
     }
+
         .tn-box {
             display: flex;
-            flex-direction: row;
+            max-width: 100%;
+            height: auto;
+            flex-direction: row nowrap;
             height: 100px;
             margin: 5px;
         }
-        .tn-image {
-            padding: 0px 15px;
+        
+        /* Responsive Thumbnail Images & Aspect Ratio */
+        .tn-image-container {
+            background: white;
         }
+            .tn-image-container::before {
+                content: "";
+                width: 1px;
+                margin-left: -1px;
+                float: left;
+                height: 0;
+                padding-top: 591.44px / 1127.34px * 100%;
+            }
+            .tn-image-container::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+                .tn-image {
+                    display: inline-block;
+                    width: 168px;
+                    height: 94px;
+                    padding: 0px 15px;
+                }
         .tn-info{
-            width: 20vw;
+            display: flex;
+            flex-flow: column;
+            width: 30%;
+            font-family: inherit;
             margin: 0px;
             margin-block-start: 0px;
+            overflow: hidden;
+            background: slateblue;
         }
             .tn-title {
+                font-size: 0.8em;
+                font-weight: 500;
+                line-height: 1.3;
+                letter-spacing: 1.2;
+                word-wrap: break-word;
+                white-space: normal;
 
             }
 
             .tn-channel {
-
+                font-size:0.8em;
+                font-weight: 400;
+                color: #606060;
+                word-wrap: break-word;
+                white-space: normal;
             }
             .tn-views {
-
+                line-height: 0.6;
+                font-size: 0.8em;
+                font-weight: 400;
+                color: #606060;
+                word-wrap: break-word;
+                white-space: normal;
             }
 
     /* User Comment Container */
     .userComment-column {
         display: flex;
+        order: 3;
 
     }
     /* User Comment Box */
