@@ -56,6 +56,7 @@ ul {
     }
         .fa-bars {
             color: #606060;
+            font-size: 1.4em;
         }
 
     /* Youtube Icon */
@@ -128,28 +129,28 @@ ul {
 
     /* Create Icon */
     .create-button {
-        height: 5vh;
+        height: 28px;
         width: auto;
         border: none;
         outline: none;
         cursor: pointer;
     }
     .create-icon {
-        height: 5vh;
+        height: 28px;
         width: auto;
         cursor: pointer;
     }
 
     /* Apps Icon */
     .apps-button {
-        height: 5vh;
+        height: 27px;
         width: auto;
         border: none;
         outline: none;
         cursor: pointer;
     }
         .apps-icon {
-            height: 5vh;
+            height: 27px;
             width: auto;
         }
 
@@ -162,6 +163,7 @@ ul {
     }
         .fa-ellipsis-v {
             color: #606060;
+            font-size: 1.4em;
         }
 
     /* SignIn Button */
@@ -177,7 +179,7 @@ ul {
         word-wrap: none;
         white-space: nowrap;
     }
-        .fa-user-circle {
+        .signin-button > .fa-user-circle {
             color: #0A5FD4;
             padding-right: 15px;
             line-height: 0;
@@ -188,7 +190,7 @@ ul {
     display: grid;
     max-width: 100vw;
     height: auto;
-    padding: 70px 20px;
+    padding: 72px 22px;
     grid-template-columns: 73vw 27vw;
     grid-auto-flow: row;
     grid-template-areas:
@@ -234,21 +236,21 @@ ul {
                 font-family: inherit;
                 font-weight: normal;
                 font-size: 1em;
-                line-height: 1.5;
-                margin-bottom: 0px;
+                line-height: 2;
+                padding-top: 12px;
             }
             .video-info-main {
                 display: flex;
                 flex-direction: row nowrap;
                 justify-content: space-between;
                 align-items: center;
-                color: #7B7B7B;
+                color: #606060;
                 border-bottom: 1px solid #E0E0E0;
-                margin-top: -1vh;
                 padding-left: 0px;
+                padding-bottom: 10px;
             }
                 .view-counter {
-                    font-size: 0.75rem;
+                    font-size: 0.80rem;
                     font-weight: 400;
                 }
                 
@@ -324,7 +326,7 @@ ul {
         .description-box {
             display: flex;
             flex-flow: column nowrap;
-            width: 65vw;
+            width: 74vw;
             height: auto;
             font-family: inherit;
             padding-left: 20px;
@@ -334,15 +336,15 @@ ul {
                 flex-flow: row nowrap;
                 justify-content: flex-start;
                 height: auto;
-                width: 60vw;
+                width: 74vw;
             }
                 .profile-pic-container {
                     display: inline-block;
                     padding: 10px 18px 0px 0px;
                 }
                 .profile-pic {
-                    height: 50px;
-                    width: 50px;
+                    height: 45px;
+                    width: 45px;
                     border-radius: 50%;
                     cursor: pointer; 
                     image-rendering: auto;
@@ -385,6 +387,12 @@ ul {
                     font-weight: 400;
                     border-radius: 3px;
                     cursor: pointer;
+                }
+                .desc-info {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    width: 100%;
+                    height: auto;
                 }
                 .description-text {
                     display: block;
