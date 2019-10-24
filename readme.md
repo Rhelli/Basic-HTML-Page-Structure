@@ -4,7 +4,7 @@ This project consists of building an HTML document that matches the appearance o
 
 ## Link to assignment
 
-The assignment can be found in the Odin Project's HTML and CSS course that can be found [here](https://www.theodinproject.com/courses/html5-and-css3/lessons/html-forms).
+The assignment can be found in the Odin Project's HTML and CSS course that can be found [here](https://www.theodinproject.com/courses/html5-and-css3/lessons/embedding-images-and-video.).
 
 ## Technologies used
 
