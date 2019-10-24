@@ -751,7 +751,7 @@ box-shadow: -1px 1px 6px 0px rgba(2,36,80,1);
     }
     .video-content {
         display: flex;
-        max-width: 95vw;
+        max-width: 93vw;
         order: 1;
     }
         .description-box {
