@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
 html {
     text-align: left;
     font-family: 'Roboto', sans-serif, monospace;
@@ -169,19 +171,24 @@ ul {
     /* SignIn Button */
     .signin-button {
         display: inline-block;
-        height: 35px;
-        width: 90px;
+        height: 36px;
+        width: 95px;
         border: 1px solid #0A5FD4;
         border-radius: 2px;
         font-size: 0.8em;
         font-weight: 500;
+        line-height: 0;
         color: #0A5FD4;
         word-wrap: none;
         white-space: nowrap;
+        align-self: flex-end;
     }
         .signin-button > .fa-user-circle {
             color: #0A5FD4;
-            padding-right: 15px;
+            position: relative;
+            top: 4px;
+            font-size: 1.8em;
+            padding-right: 5px;
             line-height: 0;
             margin: 0 !important;
         }
@@ -236,7 +243,7 @@ ul {
                 font-family: inherit;
                 font-weight: normal;
                 font-size: 1em;
-                line-height: 2;
+                line-height: 1.8;
                 padding-top: 12px;
             }
             .video-info-main {
@@ -247,11 +254,11 @@ ul {
                 color: #606060;
                 border-bottom: 1px solid #E0E0E0;
                 padding-left: 0px;
-                padding-bottom: 10px;
             }
                 .view-counter {
                     font-size: 0.80rem;
                     font-weight: 400;
+                    padding-bottom: 13px;
                 }
                 
                 /* Main Video Buttons */
@@ -274,30 +281,34 @@ ul {
                     justify-content: space-evenly;
                     align-items: baseline;
                     align-content: center;
-                    margin-bottom: -7px;
                 }
                     .likes-dislikes {
                         display: flex;
-                        margin-bottom: -9px;
                         flex-flow: row nowrap;
                         border-bottom: 2px solid #909090;
                         margin-right: 20px;
+                        height: 28px;
+                        padding-bottom: 0;
+                        margin-bottom: -5px;
                     }
 
                     .likes-counter {
                         display: inline-block;
                     }
-                    .fa-thumbs-up {
+                    .likes-counter > .fa-thumbs-up {
                         color: #909090;
                         cursor: pointer;
+                        padding-right: 10px;
+                        padding-left: 15px;
                     }
                     .dislikes-counter {
                         margin-left: 25px;
                         margin-right: 25px;
                     }
-                    .fa-thumbs-down {
+                    .dislikes-counter > .fa-thumbs-down {
                         color: #909090;
                         cursor: pointer;
+                        padding-right: 10px;
                     }
 
                     .fa-share {
@@ -307,6 +318,8 @@ ul {
                     }
                     .share-section {
                         margin-right: 25px;
+                        font-size: 1em;
+                        font-weight: 500;
                     }
                     .fa-plus {
                         margin-right: 10px;
@@ -315,11 +328,15 @@ ul {
                     }
                     .save {
                         margin-right: 20px;
+                        font-size: 1em;
+                        font-weight: 500;
                     }
                     .fa-ellipsis-h {
                         color: #909090;
                         cursor: pointer;
                         padding-right: 5px;
+                        position: relative;
+                        top: 2px;
                     }
         
         /* Video Description */
