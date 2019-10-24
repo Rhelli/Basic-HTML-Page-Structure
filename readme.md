@@ -12,7 +12,7 @@ Basic HTML5, CSS and github was used on this collaborative project.
 
 ## Our project
 
-Our project can be found in https://github.com/Rhelli/Basic-HTML-Page-Structure  
+Our project can be found in https://github.com/Rhelli/Basic-HTML-Page-Structure/tree/version2.1
 A live view can be found in https://raw.githack.com/Rhelli/Basic-HTML-Page-Structure/version2.1/index.html
 
 ## Contributors
