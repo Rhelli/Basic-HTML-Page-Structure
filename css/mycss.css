@@ -117,6 +117,8 @@ ul {
                 height: 30px;
                 width: 5vw;
                 border-radius: 2px;
+                background: transparent;
+                border: 1px solid lightgray;
             }
                 .search-button:hover {
                     background-color: #F0F0F0;
@@ -178,6 +180,7 @@ ul {
         font-weight: 500;
         line-height: 0;
         color: #0A5FD4;
+        background-color: transparent;
         word-wrap: normal;
         white-space: nowrap;
         align-self: flex-end;
@@ -208,11 +211,11 @@ ul {
     /* Main Video iFrame Container (LEFT) */
     .video-content {
         display: inline-flex;
-        max-width: 73vw;
+        max-width: 70vw;
         grid-area: video;
         height: auto;
         flex-flow: column nowrap;
-        background-color: white;
+        background-color: #F9F9F9;
         padding-right: 20px;
     }
         /* Video iFrame with Title and Buttons */
@@ -351,6 +354,7 @@ ul {
             height: auto;
             font-family: inherit;
             border-bottom: 1px solid #E0E0E0;
+            background-color: #F9F9F9;
         }
             .description-top-container {
                 display: flex;
@@ -422,6 +426,7 @@ ul {
                     font-size: 0.75em;
                     font-weight: 400;
                     border-radius: 2px;
+                    border: none;
                     cursor: pointer;
                 }
                 .desc-info {
@@ -505,7 +510,7 @@ ul {
 
     .thumbnail-column {
         display: inline-flex;
-        max-width: 35vw;
+        max-width: 30vw;
         grid-area: thumbnail;
         height: auto;
         flex-flow: row nowrap;
@@ -513,6 +518,7 @@ ul {
         align-items: flex-start;
         border-bottom: 1px solid #eee;
         margin-right: 40px;
+        background-color: #F9F9F9;
     }
 
         .tn-box {
@@ -526,7 +532,7 @@ ul {
         
         /* Responsive Thumbnail Images & Aspect Ratio */
         .tn-image-container {
-            background: white;
+            background: #F9F9F9;
         }
             .tn-image-container::before {
                 content: "";
@@ -555,6 +561,7 @@ ul {
             margin: 0px;
             /* margin-block-start: 0px; */
             padding-left: 10px;
+            background-color: #F9F9F9;
         }
         .tn-info > h4, p {
             margin-block-start: 0 !important;
@@ -749,6 +756,7 @@ ul {
         display: flex;
         flex-flow: column nowrap;
         align-items: flex-start;
+        padding: 0px 20px;
 
     }
     .video-content {
@@ -765,14 +773,13 @@ ul {
     
         .thumbnail-column {
         display: flex;
-        width: 100vw;
-        padding-right: 20px;
+        width: 95vw;
         margin: 0;
         order: 2;
     }
         .tn-info {
             display: inline-flex;
-            max-width: 80vw;
+            max-width: 60vw;
         }
         .tn-box {
             width: 90vw;
@@ -803,7 +810,7 @@ ul {
     .upnext-text {
         margin-right: 80%;
     }
+}
+@media only screen and (max-width: 1000px) {
 
-
-
-}   
+}
