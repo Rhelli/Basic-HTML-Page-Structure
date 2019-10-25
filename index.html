@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <script src="https://kit.fontawesome.com/ededf92f28.js" crossorigin="anonymous"></script>
     <meta charset="utf-8">
@@ -9,8 +10,8 @@
 <body>
     <!-- navigation bar -->
     <nav class="navbar">
-        <a href="#Guide"><button class="hamburger-button"><i class="fas fa-bars fa-2x"></i></button></a>
-        <a href="#Home"><button class="youtube-button"><img class="youtube-icon" src="./Icons/youtube-logo.png" alt="Youtube"></button></a>
+        <a href="#Guide" class="hamburger-button"><i class="fas fa-bars"></i></a>
+        <a href="#Home" class="youtube-button"><img class="youtube-icon" src="./img/youtube-logo.png" alt="Youtube"></a>
         <div class="search-container">
             <form class="search-form">
                 <div class="search-field-div">
@@ -21,10 +22,10 @@
                 </div>
             </form>
         </div>
-        <a href="#Video-create"><button class="create-button"><img class="create-icon" src="./Icons/Create icon.png" alt="Create a video or post"></button></a>
-        <a href="#Youtube-apps"><button class="apps-button"><img class="apps-icon" src="./Icons/Apps icon.png" alt="YouTube apps"></button></a>
-        <a href="#Settings"><button class="settings-button"><i class="fas fa-ellipsis-v fa-2x"></i></button></a>
-        <a href="#Signin"><button class="signin-button"><i class="fas fa-user-circle fa-lg"></i>SIGN IN</button></a>
+        <a href="#Video-create" class="create-button"><img class="create-icon" src="./img/Create-icon.png" alt="Create a video or post"></a>
+        <a href="#Youtube-apps" class="apps-button"><img class="apps-icon" src="./img/Apps-icon.png" alt="YouTube apps"></a>
+        <a href="#Settings" class="settings-button"><i class="fas fa-ellipsis-v"></i></a>
+        <div><button class="signin-button"><i class="fas fa-user-circle"></i>SIGN IN</button></div>
     </nav>
 
 <main class="main-container">
@@ -32,7 +33,7 @@
     <div class="video-content">
         <div class="video-column">
             <div class="video-player">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/f9ip1iSAptQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/f9ip1iSAptQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <h4 class="video-title">What is Microverse?</h4>
             <div class="video-info-main">
@@ -51,12 +52,23 @@
             </div>
         </div>
         <div class="description-box">
-            <div class="profile-pic-container">
-                <img src="img/photo.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="description-top-text">
+                <div class="description-top-container">
+                    <div class="profile-pic-container">
+                        <img src="img/photo.jpg" alt="Profile Picture" class="profile-pic">
+                    </div>
+                    <div class="description-top-text">
+                        <h4 class="description-profile-title">Microverse <i class="fas fa-check-circle"></i></h4>
+                        <h5 class="description-subscribers-text">1.9K subscribers</h5>
+                    </div>
+                    <div class="description-subscribe">
+                        <button class="subscribe-button">SUBSCRIBE</button>
+                    </div>
+                </div>
             </div>
-            <div class="description-div">
-                <h4 class="description-profile-title">Microverse</h4>
-                <p class="description-profile-info">Microverse is a global, distributed school for software developers that doesn't charge students anything until they get hired.</p>
+            <div class="desc-info">
+                <p class="description-text">Microverse is a global, distributed school for software developers that doesn't charge students anything until they get hired.</p>
+                <p class="show-more-text">SHOW MORE</p>
             </div>
         </div>
     </div>
@@ -64,49 +76,74 @@
     <!-- thumbnail container -->
     <aside class="thumbnail-column">
         <ul>
+            <li class="upnext">
+                <div class="switch-line">
+                    <div class="upnext-text">
+                        <p class="un-left">Up next</p>
+                    </div>
+                    <div class="toggle-switch">
+                        <p class="un-right">AUTOPLAY</p>
+                        <label class="un-right switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="tn-box">
+                    <div class="tn-image-container">
+                        <img class="tn-image" src="https://img.youtube.com/vi/Ft1waA3p2_w/default.jpg" alt="pointless">
+                    </div>
+                    <div class="tn-info">
+                        <h4 class="tn-title">Nikola Tesla - Limitless Energy & the Pyramids of Egypt</h4>
+                        <p class="tn-channel">After Skool <i class="fas fa-check-circle"></i></p>
+                        <p class="tn-views">60 views</p>
+                    </div>
+                </div>
+            </li>
+
             <li class="tn-box">
                 <div class="tn-image-container">
-                    <img class="tn-image" src="https://img.youtube.com/vi/1V3zRR37590/default.jpg">
+                    <img class="tn-image" src="https://img.youtube.com/vi/1V3zRR37590/default.jpg" alt="pointless">
                 </div>
                 <div class="tn-info">
                     <h4 class="tn-title">The Evolution Of The SpaceX Starship | Answers With Joe</h4>
-                    <p class="tn-channel">Joe Scott</p>
+                    <p class="tn-channel">Joe Scott <i class="fas fa-check-circle"></i></p>
                     <p class="tn-views">33,660 views</p>
                 </div>
             </li>
             <li class="tn-box">
                 <div class="tn-image-container">
-                    <img class="tn-image" src="https://img.youtube.com/vi/eNcR2m5gvok/default.jpg">
+                    <img class="tn-image" src="https://img.youtube.com/vi/eNcR2m5gvok/default.jpg" alt="pointless">
                 </div>
                 <div class="tn-info">    
                     <h4 class="tn-title">Fixing BROKEN Traffic Using "Lane Mathematics" in Cities Skylines</h4>
-                    <p class="pl-channel">Biffa Plays Indie Games</p>
+                    <p class="tn-channel">Biffa Plays Indie Games</p>
                     <p class="tn-views">1,247,942 views</p>
                 </div>
             </li>
             <li class="tn-box">
                 <div class="tn-image-container">
-                    <img class="tn-image" src="https://img.youtube.com/vi/h97fXhDN5qE/default.jpg">
+                    <img class="tn-image" src="https://img.youtube.com/vi/h97fXhDN5qE/default.jpg" alt="pointless">
                 </div>
                 <div class="tn-info">
                     <h4 class="tn-title">Elon Musk's Basic Economics</h4>
-                    <p class="tn-channel">Wendover Productions</p>
+                    <p class="tn-channel">Wendover Productions <i class="fas fa-check-circle"></i></p>
                     <p class="tn-views">4,087,736 views</p>
                 </div>
             </li>
             <li class="tn-box">
                 <div class="tn-image-container">
-                    <img class="tn-image" src="https://img.youtube.com/vi/RRWggYusSds/default.jpg">
+                    <img class="tn-image" src="https://img.youtube.com/vi/RRWggYusSds/default.jpg" alt="pointless">
                 </div>
                 <div class="tn-info">
                     <h4 class="tn-title">Why Time is One of Humanity's Greatest Inventions</h4>
-                    <p class="tn-channel">Wendover Productions</p>
+                    <p class="tn-channel">Wendover Productions <i class="fas fa-check-circle"></i></p>
                     <p class="tn-views">1,241,703 views</p>
                 </div>
             </li>
             <li class="tn-box">
                 <div class="tn-image-container">
-                    <img class="tn-image" src="https://img.youtube.com/vi/giQ8xEWjnBs/default.jpg">
+                    <img class="tn-image" src="https://img.youtube.com/vi/giQ8xEWjnBs/default.jpg" alt="pointless">
                 </div>
                 <div class="tn-info">
                     <h4 class="tn-title">Why SpaceX is Making Starlink</h4>
@@ -116,51 +153,51 @@
             </li>
             <li class="tn-box">
                 <div class="tn-image-container">
-                    <img class="tn-image" src="https://img.youtube.com/vi/kubERteR0Nw/default.jpg">
+                    <img class="tn-image" src="https://img.youtube.com/vi/kubERteR0Nw/default.jpg" alt="pointless">
                 </div>
                 <div class="tn-info">
                     <h4 class="tn-title">12 Most Amazing Abandoned Technology And Vehicles</h4>
-                    <p class="tn-channel">Amazing Stock</p>
+                    <p class="tn-channel">Amazing Stock <i class="fas fa-check-circle"></i></p>
                     <p class="tn-views">972,928 views</p>
                 </div>
             </li>
             <li class="tn-box">
                 <div class="tn-image-container">
-                    <img class="tn-image" src="https://img.youtube.com/vi/hOFRbjjjwCE/default.jpg">
+                    <img class="tn-image" src="https://img.youtube.com/vi/hOFRbjjjwCE/default.jpg" alt="pointless">
                 </div>
                 <div class="tn-info">
                     <h4 class="tn-title">These Are the Events That Will Happen Before 2050</h4>
-                    <p class="tn-channel">RealLifeLore</p>
+                    <p class="tn-channel">RealLifeLore <i class="fas fa-check-circle"></i></p>
                     <p class="tn-views">19,284,328 views</p>
                 </div>
             </li>
             <li class="tn-box">
                 <div class="tn-image-container">
-                    <img class="tn-image" src="https://img.youtube.com/vi/QUd1XColj-s/default.jpg">
+                    <img class="tn-image" src="https://img.youtube.com/vi/QUd1XColj-s/default.jpg" alt="pointless">
                 </div>
                 <div class="tn-info">
                     <h4 class="tn-title">What if Antarctica MELTED?</h4>
-                    <p class="tn-channel">Atlas Pro</p>
+                    <p class="tn-channel">Atlas Pro <i class="fas fa-check-circle"></i></p>
                     <p class="tn-views">1,599,840 views</p>
                 </div>
             </li>
             <li class="tn-box">
                 <div class="tn-image-container">
-                    <img class="tn-image" src="https://img.youtube.com/vi/YGFtFFrsQ7c/default.jpg">
+                    <img class="tn-image" src="https://img.youtube.com/vi/YGFtFFrsQ7c/default.jpg" alt="pointless">
                 </div>
                 <div class="tn-info">
                     <h4 class="tn-title">Real Reason Why China Wants To Expand</h4>
-                    <p class="tn-channel">The Infographics Show</p>
+                    <p class="tn-channel">The Infographics Show <i class="fas fa-check-circle"></i></p>
                     <p class="tn-views">710,438 views</p>
                 </div>
             </li>
             <li class="tn-box">
                 <div class="tn-image-container">
-                    <img class="tn-image" src="https://img.youtube.com/vi/X0TpRGXKdog/default.jpg">
+                    <img class="tn-image" src="https://img.youtube.com/vi/X0TpRGXKdog/default.jpg" alt="pointless">
                 </div>
                 <div class="tn-info">
                     <h4 class="tn-title">What Past Predictions of the Future Got Right</h4>
-                    <p class="tn-channel">Second Thought</p>
+                    <p class="tn-channel">Second Thought <i class="fas fa-check-circle"></i></p>
                     <p class="tn-views">1,597,371 views</p>
                 </div>
             </li>
@@ -179,8 +216,8 @@
                     </div>
                     <p class="uc-comment">So I've tendered in my application for the November class, I know a bit of HTML, CSS3 and java script. What more do I need to learn to start?</p>
                     <div class="uc-likes-section">
-                        <p><i class="fas fa-thumbs-up"></i>99</p>
-                        <p><i class="fas fa-thumbs-down"></i>1</p>
+                        <p><i class="fas fa-thumbs-up"></i> 99</p>
+                        <p><i class="fas fa-thumbs-down"></i> 1</p>
                         <p>REPLY</p>
                     </div>
                     <div class="uc-viewReply">
@@ -215,8 +252,8 @@
                     </div>
                     <p class="uc-comment">I've never programming before , would it be a problem or could i learning with the microverse and get a job within these 8 months?</p>
                     <div class="uc-likes-section">
-                        <p><i class="fas fa-thumbs-up"></i>55</p>
-                        <p><i class="fas fa-thumbs-down"></i>7</p>
+                        <p><i class="fas fa-thumbs-up"></i> 55</p>
+                        <p><i class="fas fa-thumbs-down"></i> 7</p>
                         <p>REPLY</p>
                     </div>
                     <div class="uc-viewReply">
@@ -233,8 +270,8 @@
                     </div>
                     <p class="uc-comment">Is age a problem? I am 58.</p>
                     <div class="uc-likes-section">
-                        <p><i class="fas fa-thumbs-up"></i>151</p>
-                        <p><i class="fas fa-thumbs-down"></i>17</p>
+                        <p><i class="fas fa-thumbs-up"></i> 151</p>
+                        <p><i class="fas fa-thumbs-down"></i> 17</p>
                         <p>REPLY</p>
                     </div>
                     <div class="uc-viewReply">
@@ -251,8 +288,8 @@
                     </div>
                     <p class="uc-comment">Does Microverse have access for Deaf people? Will the team be able to text instead of speaking and hearing?</p>
                     <div class="uc-likes-section">
-                        <p><i class="fas fa-thumbs-up"></i>1</p>
-                        <p><i class="fas fa-thumbs-down"></i>101</p>
+                        <p><i class="fas fa-thumbs-up"></i> 1</p>
+                        <p><i class="fas fa-thumbs-down"></i> 101</p>
                         <p>REPLY</p>
                     </div>
                     <div class="uc-viewReply">
