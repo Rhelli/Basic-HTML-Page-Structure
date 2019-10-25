@@ -6,6 +6,7 @@ html {
     font-size: 16px;
     padding: 0;
     margin: 0;
+    background-color: #F9F9F9;
 }
 body {
     padding: 0;
@@ -34,7 +35,7 @@ ul {
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
-    width: 100vw;
+    width: 100%;
     height: 50px;
     background-color: white;
     z-index: 5;
@@ -43,28 +44,30 @@ ul {
 } 
 .navbar a, .navbar div {
     display: inline-block;
-    overflow: hidden;
 }
 
     /* Guide Icon */
     .hamburger-button {
         display: inline-block;
-        height: 4vh;
-        width: 4vw;
+        max-height: 28px;
+        position: relative;
+        top: 0px;
+        width: auto;
         border: none;
         outline: none;
         cursor: pointer;
     }
         .fa-bars {
             color: #606060;
-            font-size: 1.4em;
+            font-size: 1em;
         }
 
     /* Youtube Icon */
     .youtube-button {
         display: inline-block;
         position: relative;
-        max-height: 5vh;
+        bottom: 1px;
+        max-height: 25px;
         width: auto;
         background: transparent;
         border: none;
@@ -72,11 +75,11 @@ ul {
     }
     .youtube-icon {
         display: block;
-        max-height: 4vh;
+        max-height: 28px;
         width: auto;
         margin: 0;
         padding: 0;
-        background: transparent;
+        background: white;
     }
     /* Search Form */
     .search-container {
@@ -84,7 +87,7 @@ ul {
         justify-content: center;
         width: 35vw;
         height: 30px;
-        margin: 0 25px;
+        margin: 0 350px 0px 150px;
     }
         .search-form {
             display: flex;
@@ -115,7 +118,7 @@ ul {
             .search-button {
                 display: inline-block;
                 height: 30px;
-                width: 5vw;
+                width: 65px;
                 border-radius: 2px;
                 background: transparent;
                 border: 1px solid lightgray;
@@ -125,6 +128,7 @@ ul {
                 }
                 .fa-search {
                     color: #606060;
+                    font-size: 1.2em;
                 }
                 .fa-search:hover {
                     color: #616161;
@@ -132,21 +136,21 @@ ul {
 
     /* Create Icon */
     .create-button {
-        height: 28px;
+        max-height: 28px;
         width: auto;
         border: none;
         outline: none;
         cursor: pointer;
     }
     .create-icon {
-        height: 28px;
+        max-height: 28px;
         width: auto;
         cursor: pointer;
     }
 
     /* Apps Icon */
     .apps-button {
-        height: 27px;
+        max-height: 27px;
         width: auto;
         border: none;
         outline: none;
@@ -752,8 +756,182 @@ ul {
 }
 
 @media only screen and (max-width: 1000px) {
+    
+    .navbar {
+        display: flex;
+        position: fixed;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        z-index: 5;
+        overflow: hidden;
+    
+    } 
+    .navbar a, .navbar div {
+        display: inline-block;
+    }
+    
+        /* Guide Icon */
+        .hamburger-button {
+            display: inline-block;
+            max-height: 28px;
+            position: relative;
+            top: 0px;
+            width: auto;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+            .fa-bars {
+                color: #606060;
+                font-size: 1em;
+            }
+    
+        /* Youtube Icon */
+        .youtube-button {
+            display: inline-block;
+            position: relative;
+            bottom: 1px;
+            max-height: 25px;
+            width: auto;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .youtube-icon {
+            display: block;
+            max-height: 20px;
+            width: auto;
+            margin: 0;
+            padding: 0;
+            background: white;
+        }
+        /* Search Form */
+        .search-container {
+            display: flex;
+            justify-content: center;
+            max-width: 35vw;
+            max-height: 30px;
+            margin: 0 15px;
+        }
+            .search-form {
+                display: flex;
+                max-width: 35vw;
+                max-height: 30px;
+            }
+                .search-field-div {
+                    display: inline-block;
+                    max-width: 30vw;
+                    height: inherit;
+                }
+                    .search-field {
+                        max-width: 30vw;
+                        height: inherit;
+                        background: transparent;
+                        padding-left: 8px;
+                        font-size: 1em;
+                        font-weight: 300;
+                        border: 1px solid lightgray;
+                        border-radius: 2px;
+                        outline: none;
+                    }
+                    .search-button-div {
+                        display: inline-block;
+                        max-height: 30px;
+                        width: auto
+                    }
+                .search-button {
+                    display: inline-block;
+                    height: 30px;
+                    width: 40px;
+                    border-radius: 2px;
+                    background: transparent;
+                    border: 1px solid lightgray;
+                }
+                    .search-button:hover {
+                        background-color: #F0F0F0;
+                    }
+                    .fa-search {
+                        color: #606060;
+                        font-size: 1.2em;
+                    }
+                    .fa-search:hover {
+                        color: #616161;
+                    }
+    
+        /* Create Icon */
+        .create-button {
+            max-height: 28px;
+            width: auto;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .create-icon {
+            max-height: 28px;
+            width: auto;
+            cursor: pointer;
+        }
+    
+        /* Apps Icon */
+        .apps-button {
+            max-height: 27px;
+            width: auto;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+            .apps-icon {
+                height: 27px;
+                width: auto;
+            }
+    
+        /* Settings Icon */
+        .settings-button {
+            position: relative;
+            top: 2px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 0px 16px;
+        }
+            .fa-ellipsis-v {
+                color: #606060;
+                font-size: 1em;
+            }
+    
+        /* SignIn Button */
+        .signin-button {
+            display: inline-block;
+            max-height: 30px;
+            max-width: 89px;
+            border: 1px solid #0A5FD4;
+            border-radius: 2px;
+            font-size: 0.8em;
+            font-weight: 500;
+            line-height: 0;
+            color: #0A5FD4;
+            background-color: transparent;
+            word-wrap: normal;
+            white-space: nowrap;
+            align-self: flex-end;
+        }
+            .signin-button > .fa-user-circle {
+                color: #0A5FD4;
+                position: relative;
+                top: 4px;
+                font-size: 1.6em;
+                padding-right: 5px;
+                line-height: 0;
+                margin: 0 !important;
+            }    
+
     .main-container {
         display: flex;
+        max-width: 100vw;
         flex-flow: column nowrap;
         align-items: flex-start;
         padding: 0px 20px;
@@ -761,8 +939,9 @@ ul {
     }
     .video-content {
         display: flex;
-        max-width: 93vw;
+        max-width: 100vw;
         order: 1;
+        margin: 0;
     }
         .description-box {
             width: 95vw;
@@ -770,6 +949,10 @@ ul {
             .description-top-container {
                 width: 95px;
             }
+
+    .video-info-right {
+        flex-flow: row wrap;
+    }
     
         .thumbnail-column {
         display: flex;
@@ -779,10 +962,10 @@ ul {
     }
         .tn-info {
             display: inline-flex;
-            max-width: 60vw;
+            max-width: 50vw;
         }
         .tn-box {
-            width: 90vw;
+            max-width: 90vw;
         }
     
     .userComment-column {
@@ -801,16 +984,13 @@ ul {
 
     }
     .upnext {
-        max-width: 100vw;
+        max-width: 95vw;
     }
     .switch-line {
-        max-width: 100vw;
+        max-width: 95vw;
         padding-top: 15px;
     }
     .upnext-text {
-        margin-right: 80%;
+        margin-right: 60%;
     }
-}
-@media only screen and (max-width: 1000px) {
-
 }
